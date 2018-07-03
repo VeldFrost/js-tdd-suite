@@ -11,6 +11,10 @@
 
 // Your code :
 
+const min = (x, y) => {
+    return (x<y ? x:y)
+}
+
 //* Begin of tests
 const assert = require('assert')
 

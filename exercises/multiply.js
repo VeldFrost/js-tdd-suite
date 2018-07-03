@@ -10,6 +10,24 @@
 
 // Your code :
 
+let multiply = (x, y) => {
+    let fin = 0;
+    let result = 0;
+
+    if (y < 0) {
+        while (fin > y) {
+            result -= x;
+            fin--;
+        }
+    } else {
+        while (fin < y) {
+            result += x;
+            fin++;
+        }
+    }
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
