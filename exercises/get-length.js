@@ -8,6 +8,7 @@
  */
 
 // Your code :
+const getLength = (key) => key.length;
 
 //* Begin of tests
 const assert = require('assert')
