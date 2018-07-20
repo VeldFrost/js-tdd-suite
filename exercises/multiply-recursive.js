@@ -11,6 +11,15 @@
 
 // Your code :
 
+function multiply(x, y) {
+  if (x == 0 || y == 0) {
+    return 0;
+  } else if (y > 0) {
+    return x + multiply(x, y - 1);
+  }
+  return -multiply(x, -y);
+}
+
 //* Begin of tests
 const assert = require('assert')
 
@@ -29,3 +38,13 @@ assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
 // End of tests */
+
+
+
+
+
+
+
+
+
+
